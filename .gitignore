@@ -1,0 +1,26 @@
+.gradle/
+build/
+local.properties
+**/build/
+.idea/
+*.iml
+
+# Client repository: retain Android application code only.
+# Cloud deployment, internal handoff material, fixtures, and local build
+# properties stay on the maintainer's machine and must never be committed.
+/backend/
+/docs/
+/test-fixtures/
+/.tmp-video-frames/
+*.md
+gradle.properties
+
+# Secrets and local deployment configuration.
+.env
+.env.*
+*.pem
+*.p12
+*.jks
+*.keystore
+service-account*.json
+credentials*.json
